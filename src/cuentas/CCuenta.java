@@ -11,10 +11,21 @@ public class CCuenta {
     private double saldo;
     private double tipoInterés;
 
+    /**
+     * Constructor por defecto que no recibe parámetros.
+     * Permite crear un objeto CCuenta vacío
+     */
     public CCuenta()
     {
     }
 
+    /**
+     * Constructor que recibe como parámetros todos los atributos del objeto
+     * @param nom	Nombre del titular de la cuenta
+     * @param cue	Código identificativo de la cuenta bancaria
+     * @param sal	Saldo que contiene la cuenta
+     * @param tipo	Interés de la cuenta. No se define con la creación del objeto
+     */
     public CCuenta(String nom, String cue, double sal, double tipo)
     {
         setNombre(nom);
