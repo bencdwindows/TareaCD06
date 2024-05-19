@@ -9,10 +9,19 @@ public class CCuenta {
     private String nombre;
     private String cuenta;
     private double saldo;
-    private double tipoInterés;
-    private Coche coche;
+    private double tipoInterés
+    private double comision;
+}
+  
+  public double setComision() {
 
-    /**
+	}
+
+	public void setComision(double comision) {
+		this.comision = comision;
+	}
+
+	/**
      * Constructor por defecto que no recibe parámetros.
      * Permite crear un objeto CCuenta vacío
      */
@@ -29,11 +38,12 @@ public class CCuenta {
      * @param sal	Saldo que contiene la cuenta
      * @param tipo	Interés de la cuenta. No se define con la creación del objeto
      */
-    public CCuenta(String nom, String cue, double sal, double tipo)
+    public CCuenta(String nom, String cue, double sal, double tipo, double comision)
     {
         setNombre(nom);
         setCuenta(cue);
         setSaldo(sal);
+        setComision(comision);
     }
     
     /** 
