@@ -10,13 +10,16 @@ public class CCuenta {
     private String cuenta;
     private double saldo;
     private double tipoInterés;
+    private Coche coche;
 
     /**
      * Constructor por defecto que no recibe parámetros.
      * Permite crear un objeto CCuenta vacío
      */
-    public CCuenta()
+    public CCuenta(Coche coche)
     {
+    	this.coche = coche;
+    	this.nombre = "Juan";
     }
 
     /**
