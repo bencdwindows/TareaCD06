@@ -12,7 +12,7 @@ public class Main {
         operativa_cuenta(cuenta1, null);
     }
 
-	public static void operativa_cuenta(CCuenta cuenta1, Float cantidad) {
+	public static void operativa_cuenta(CCuenta cuenta1, float cantidad) {
 		try {
             cuenta1.retirar(2300);
         } catch (Exception e) {

@@ -9,11 +9,12 @@ public class CCuenta {
     private String nombre;
     private String cuenta;
     private double saldo;
-    private double tipoInterés;
+    private double tipoInterés
     private double comision;
+}
+  
+  public double setComision() {
 
-    public double getComision() {
-		return comision;
 	}
 
 	public void setComision(double comision) {
@@ -24,8 +25,10 @@ public class CCuenta {
      * Constructor por defecto que no recibe parámetros.
      * Permite crear un objeto CCuenta vacío
      */
-    public CCuenta()
+    public CCuenta(Coche coche)
     {
+    	this.coche = coche;
+    	this.nombre = "Juan";
     }
 
     /**
